@@ -1,3 +1,4 @@
+import "dotenv/config";
 import { fileURLToPath } from "node:url";
 import { getSyncPackageJson } from "./tools/utils/package.util.mjs";
 
@@ -12,6 +13,11 @@ export default defineNuxtConfig({
     experimental: { watcher: "parcel" },
     alias: {
         src: fileURLToPath(new URL("./app", import.meta.url))
+    },
+    nitro: {
+        experimental: {
+            websocket: true
+        }
     },
     router: {
         options: {
