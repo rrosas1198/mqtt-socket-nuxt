@@ -10,6 +10,9 @@
             "style": {
                 "noInferrableTypes": "off",
                 "noNonNullAssertion": "off"
+            },
+            "suspicious": {
+                "noExplicitAny": "off"
             }
         }
     },
@@ -17,7 +20,7 @@
         "enabled": true,
         "indentStyle": "space",
         "indentWidth": 4,
-        "lineWidth": 100
+        "lineWidth": 110
     },
     "javascript": {
         "formatter": {
